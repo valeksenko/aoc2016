@@ -2,3 +2,8 @@
 
 Doing [AoC 2016](https://adventofcode.com/2016) in a different language every day.
 
+RUN: ./lib/dayXX/run.sh
+TEST: ./lib/dayXX/test.sh
+
+Day 01 - [g]Forth
+
