@@ -1,4 +1,4 @@
-\ https://adventofcode.com/2016/day/1
+\ https://adventofcode.com/2016/day/1#part2
 
 : input>pad ( -- u flag ; pad changed )
 pad 80 stdin read-line abort" read failed" ;
