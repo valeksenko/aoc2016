@@ -1,5 +1,11 @@
 BEGIN {
   FS = "[-[\\]]"
+  A = 97
+  Z = 122
+  for (n = A; n <= Z; n++) {
+    ord[sprintf("%c", n)] = n
+    chr[n] = sprintf("%c", n)
+  }
 }
 
 function sorter(c1, n1, c2, n2) {
@@ -25,6 +31,16 @@ function match_checksum(letters,   i, checksum) {
   return 1
 }
 
+function rotate(word, id,   chars, c, res) {
+  split(word, chars, "")
+
+  for (c in chars) {
+    res = res chr[(ord[chars[c]]  - A + id) % 26 + A]
+  }
+
+  return res
+}
+
 {
   delete letters
   for (i = 1; i < NF - 2; i++) {
@@ -37,9 +53,9 @@ function match_checksum(letters,   i, checksum) {
 
   asorti(letters, sorted, "sorter")
 
-  if (match_checksum(sorted))
-    rooms += $(NF - 2)
+  if (match_checksum(sorted)) {
+    for (i = 1; i < NF - 2; i++)
+      printf "%s ", rotate($i, $(NF - 2))
+    print "- ", $(NF - 2)
+  }
 }
-
-END { print rooms }
-
