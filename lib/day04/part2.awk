@@ -1,3 +1,5 @@
+# https://adventofcode.com/2016/day/4#part2
+
 BEGIN {
   FS = "[-[\\]]"
   A = 97

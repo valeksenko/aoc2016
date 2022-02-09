@@ -12,4 +12,5 @@ Doing [AoC 2016](https://adventofcode.com/2016) in a different language every da
 |  02 | REXX         |
 |  03 | Bash         |
 |  04 | [g]AWK       |
+|  05 | TCL          |
 
