@@ -10,11 +10,10 @@ if [ "$res" = "18f47a30" ]
   else
     echo "FAIL: $res"
 fi
-exit
 
 echo -n "WARNING: SLOW! *** TEST d05p2: "
 res=$( tclsh $dir/part2.tcl < $dir/../../data/examples/day05.txt )
-if [ "$res" = "18f47a30" ]
+if [ "$res" = "05ace8e3" ]
   then
     echo "PASS"
   else
