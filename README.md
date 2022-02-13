@@ -13,4 +13,5 @@ Doing [AoC 2016](https://adventofcode.com/2016) in a different language every da
 |  03 | Bash         |
 |  04 | [g]AWK       |
 |  05 | TCL          |
+|  06 | Perl[5]      |
 
