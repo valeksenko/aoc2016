@@ -10,11 +10,10 @@ if [ $res -eq 2 ]
   else
     echo "FAIL: $res"
 fi
-exit
 
 echo -n "*** TEST d07p2: "
-res=$( go run $dir/part2.go < $dir/../../data/examples/day07.txt )
-if [ "$res" = "07ace8e3" ]
+res=$( go run $dir/part2.go < $dir/../../data/examples/day07_1.txt )
+if [ $res -eq 3 ]
   then
     echo "PASS"
   else
